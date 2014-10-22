@@ -3,7 +3,7 @@ from bot.models import History
 
 
 def index(request):
-    history = History.objects.filter(channel='#django-id')
+    history = History.objects.filter(channel='#django-id').order_by('-id')
     context = {
         'history': history,
     }
