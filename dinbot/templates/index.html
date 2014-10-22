@@ -1,0 +1,5 @@
+<ul>
+    {% for chat in history %}
+        <li>{{ chat.created }} <b>{{ chat.nick }}</b>: {{ chat.content }}</li>
+    {% endfor %}
+</ul>

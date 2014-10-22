@@ -1,0 +1,38 @@
+IRC:
+    servers: irc.freenode.net:6667
+    nick: dinbot
+    user: dinbot
+    #password: testing
+    realname: "Django Indonesia Bot"
+    auto_ping: 300
+
+plugins:
+    base: plugins
+    load:
+        - /dinbot.plugins.debug
+        - /dinbot.plugins.ingat
+        - /dinbot.plugins.log
+        - /dinbot.plugins.tanya
+
+components.load:
+    - /dinbot.components.acl
+
+channels:
+    autojoin:
+        - "#django-id"
+
+acl:
+    permissions:
+        "#django-id":
+            ingat:
+                allow:
+                    - kangfend
+                    - fireh
+                    - kriwil
+                    - teion
+            lupakan:
+                allow:
+                    - kangfend
+                    - fireh
+                    - kriwil
+                    - teion

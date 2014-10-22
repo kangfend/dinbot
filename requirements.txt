@@ -1,0 +1,10 @@
+Django==1.7
+dj-database-url==0.3.0
+dj-static==0.0.6
+psycogreen==1.0
+psycopg2==2.5.1
+static==0.4
+waitress==0.8.9
+wolframalpha==1.2
+wsgiref==0.1.2
+pyaib==1.1.0
